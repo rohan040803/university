@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website</title>
+    <link rel="stylesheet" href="university-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main2">
+        <nav>
+            <img src="university-logo.png">
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><i class="fa-solid fa-bars" onclick="togglebtn()"></i></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="university-About.html">ABOUT</a></li>
+                    <li><a href="university-courses.html">COURSE</a></li>
+                    <li><a href="university-contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i> 
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>New Delhi, Palam, IN</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i> 
+                    <span>
+                        <h5>+91 7982022449</h5>
+                        <p>Monday to Saturday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i> 
+                    <span>
+                        <h5>rohan040803@gmail.com</h5>
+                        <p>Email us your Query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+
+                <form action="">
+                    <input type="text" placeholder="Enter your name" required>
+                    <input type="email" placeholder="Enter Email address" required>
+                    <input type="text" placeholder="Enter Your subject" required>
+                    <textarea rows="8" placeholder="Message" required></textarea>
+                    <button type="submit" class="btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam quidem nobis voluptatibus libero, provident veritatis officia rem ab asperiores<br>voluptates numquam temporibus hic iusto ducimus consequatur sunt suscipit dolore.</p>
+        <div class="icons">
+            <a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function togglebtn(){
+            navLinks.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html> 
